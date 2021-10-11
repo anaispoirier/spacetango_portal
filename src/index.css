@@ -1,0 +1,99 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+html { 
+  background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.st-logo {
+  width: 50px;
+  margin-right: 15px;
+}
+
+.navbar {
+  background: none;
+  box-shadow: none;
+}
+
+.welcome {
+  color: #ffff;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.main {
+  background-color: #212121;
+  min-height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-outer {
+  width: 400px;
+  height: 300px;
+  margin: 45px;
+  /* background-color: #424242; */
+  background-color: #204152;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 20px; */
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px #ffffff0a;
+  -moz-box-shadow: 0px 0px 10px #ffffff0a;
+  box-shadow: 0px 0px 10px #ffffff0a;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  /* background-color: mediumturquoise; */
+}
+
+.card-img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  background: linear-gradient(#3b6978, #204051);
+}
+
+.my-graph {
+  background-color: lightsteelblue;
+  height: 400px;
+}
+
+.title-text {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+  /* background-color: mediumvioletred; */
+}
+
+
+
