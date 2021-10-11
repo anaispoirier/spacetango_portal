@@ -7,10 +7,10 @@ import { LinearGradient } from '@vx/gradient';
 import { extent, max } from 'd3-array';
 import { Grid } from '@vx/grid';
 
-export const background = '#3b6978';
-export const background2 = '#204051';
-export const accentColor = '#edffea';
-export const accentColorDark = '#75daad';
+export const background = '#6b6870';
+export const background2 = '#424242';
+export const accentColor = '#eafff7';
+// export const accentColor = '#ffabb9';
 
 const all_data = appleStock;
 const data = all_data.slice(800, all_data.length)

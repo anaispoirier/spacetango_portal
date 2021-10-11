@@ -66,7 +66,6 @@ export default () => (
 
   
   <div>
-    {/* {console.log(data)} */}
     <svg width={width} height={height}>
     <Group top={1} left={margin} right={margin}>
         <HeatmapRect

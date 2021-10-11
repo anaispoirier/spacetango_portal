@@ -24,6 +24,7 @@ code {
 .st-logo {
   width: 50px;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .navbar {
@@ -40,6 +41,7 @@ code {
 
 .main {
   background-color: #212121;
+  /* background-color: #060d20; */
   min-height: 100vh;
 }
 
@@ -53,8 +55,8 @@ code {
   width: 400px;
   height: 300px;
   margin: 45px;
-  /* background-color: #424242; */
-  background-color: #204152;
+  background-color: #424242;
+  /* background-color: #28272c; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +78,8 @@ code {
   width: 100%;
   height: 80%;
   border-radius: 10px;
-  background: linear-gradient(#3b6978, #204051);
+  background: linear-gradient(#5a5861, #424242);
+  /* background: linear-gradient(#333236, #28272c); */
 }
 
 .my-graph {
