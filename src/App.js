@@ -43,6 +43,7 @@ const App = () => {
 
   return (
     <div className="main">
+      <div className="twinkling"/>
       {(isAuthenticated) && (
         <Router history={history}>
           <div id="app" className="main-container">

@@ -14,10 +14,10 @@ import { pink } from "@material-ui/core/colors";
 const Home = () => (
   <div className="card-container">
     <div className="d-lg-flex">
-      <Tilt className="mx-0 mx-lg-5" options={{ max : 9, scale: 1.02 }} >
+      <Tilt className="mx-0 mx-lg-5" options={{ max : 10, scale: 1.02 }} >
         <GrafanaCard />
       </Tilt>
-      <Tilt className="mx-0 mx-lg-5" options={{ max : 9, scale: 1.02 }} >
+      <Tilt className="mx-0 mx-lg-5" options={{ max : 10, scale: 1.02 }} >
         <YarkonCard />
       </Tilt>
     </div>
