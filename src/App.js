@@ -42,15 +42,19 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div className="main">
       {(isAuthenticated) && (
         <Router history={history}>
-          <div id="app" className="main">
-            <NavBar />
-            <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/profile" component={Profile} />
-            </Switch>
+          <div id="app" className="main-container">
+            {/* <div className="row header"> */}
+              <NavBar />
+            {/* </div> */}
+            <div className="row content">
+              <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/profile" component={Profile} />
+              </Switch>
+            </div>
           </div>
         </Router>
     )}

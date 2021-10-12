@@ -2,7 +2,7 @@ import React from "react";
 import Graph from "./GrafanaGraph.jsx";
 
 const Card = () => (
-  <div className="card-outer" onClick={() => {window.open("http://grafana.corvettecole.com:3000/")} }>
+  <div className="card-outer" onClick={() => {window.open("https://data.spacetango.com/")} }>
       <div className="card-inner">
         <div className="card-img">
           <Graph/>

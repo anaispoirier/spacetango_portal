@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
 
 html { 
-  background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+
 }
 
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -14,6 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #ffff;
+  background: #101010 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
 }
 
 code {
@@ -39,32 +41,23 @@ code {
   font-weight: 700;
 }
 
-.main {
-  background-color: #212121;
-  /* background-color: #060d20; */
-  min-height: 100vh;
-}
-
 .card-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .card-outer {
   width: 400px;
   height: 300px;
-  margin: 45px;
-  background-color: #424242;
+  background-color: #242424;
   /* background-color: #28272c; */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 20px; */
+  margin-bottom: 90px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px #ffffff0a;
-  -moz-box-shadow: 0px 0px 10px #ffffff0a;
-  box-shadow: 0px 0px 10px #ffffff0a;
   cursor: pointer;
 }
 
@@ -78,8 +71,31 @@ code {
   width: 100%;
   height: 80%;
   border-radius: 10px;
-  background: linear-gradient(#5a5861, #424242);
+  background: linear-gradient(#5a5861, #242424);
   /* background: linear-gradient(#333236, #28272c); */
+}
+
+.main {
+  height: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.main-container .row {
+  /* border: 1px dotted red; */
+}
+
+.main-container .row.header {
+  flex: 0 1 auto;
+}
+
+.main-container .row.content {
+  flex: 1 1 auto;
+  /* margin-top: -10%; */
 }
 
 .my-graph {

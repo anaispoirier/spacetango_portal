@@ -8,15 +8,16 @@ import YarkonCard from "../components/YarkonCard";
 import Blob1 from "../components/BackgroundBlobs/Blob1.js";
 
 import Tilt from 'react-tilt';
+import { pink } from "@material-ui/core/colors";
 
 
 const Home = () => (
   <div className="card-container">
     <div className="d-lg-flex">
-      <Tilt className="Tilt" options={{ max : 9, scale: 1.02 }} >
+      <Tilt className="mx-0 mx-lg-5" options={{ max : 9, scale: 1.02 }} >
         <GrafanaCard />
       </Tilt>
-      <Tilt className="Tilt" options={{ max : 9, scale: 1.02 }} >
+      <Tilt className="mx-0 mx-lg-5" options={{ max : 9, scale: 1.02 }} >
         <YarkonCard />
       </Tilt>
     </div>
