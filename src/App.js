@@ -4,6 +4,7 @@ import { Container } from "reactstrap";
 
 import Loading from "./components/Loading";
 import NavBar from "./components/NavBar";
+import FlowSpinner from "./components/FlowSpinner";
 import Footer from "./components/Footer";
 import Home from "./views/Home";
 import Profile from "./views/Profile";
@@ -49,6 +50,7 @@ const App = () => {
           <div id="app" className="main-container">
             {/* <div className="row header"> */}
               <NavBar />
+              {/* <FlowSpinner /> */}
             {/* </div> */}
             <div className="row content">
               <Switch>
