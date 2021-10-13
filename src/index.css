@@ -25,7 +25,7 @@ body {
 	height: 100%;
 	background: transparent url(./assets/twinkling.png) repeat;
 	background-size: 50%;
-	animation: scroll-anim 45s linear infinite;
+	animation: scroll-anim 60s ease infinite;
 }
 
 @keyframes scroll-anim {
@@ -59,7 +59,8 @@ code {
 
 .card-container {
   display: flex;
-  align-items: center;
+  padding-top: 10%;
+  /* align-items: center; */
   justify-content: center;
   width: 100%;
 }
@@ -72,7 +73,7 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 90px;
+  /* margin-bottom: 90px; */
   border-radius: 10px;
   cursor: pointer;
 }
@@ -99,19 +100,6 @@ code {
   display: flex;
   flex-flow: column;
   height: 100%;
-}
-
-.main-container .row {
-  /* border: 1px dotted red; */
-}
-
-.main-container .row.header {
-  flex: 0 1 auto;
-}
-
-.main-container .row.content {
-  flex: 1 1 auto;
-  /* margin-top: -10%; */
 }
 
 .my-graph {

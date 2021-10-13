@@ -48,16 +48,12 @@ const App = () => {
       {(isAuthenticated) && (
         <Router history={history}>
           <div id="app" className="main-container">
-            {/* <div className="row header"> */}
               <NavBar />
               {/* <FlowSpinner /> */}
-            {/* </div> */}
-            <div className="row content">
               <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/profile" component={Profile} />
               </Switch>
-            </div>
           </div>
         </Router>
     )}

@@ -39,8 +39,8 @@ export default function NavBar() {
         <div>
             <div className="d-flex welcome">
                 <img src={Logo} alt='' className="st-logo" onClick={() => routeChange("/")} />
-                {(isAuthenticated && user.name != "Zachary Jacobs") && (<div className="d-none d-sm-block" > Welcome, {user.name}! </div>)}
-                {(isAuthenticated && user.name == "Zachary Jacobs") && (<div className="d-none d-sm-block" > Get lost, {user.name}! </div>)}
+                {(isAuthenticated && user.name != "Zach Jacobs") && (<div className="d-none d-sm-block" > Welcome, {user.name}! </div>)}
+                {(isAuthenticated && user.name == "Zach Jacobs") && (<div className="d-none d-sm-block" > Get lost, {user.name}! </div>)}
             </div>
         </div>
         <div>
