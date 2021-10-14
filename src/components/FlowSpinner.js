@@ -128,7 +128,7 @@ const propTypes = {
 };
 
 const FlowerSpinner = ({
-  size = 1000,
+  size = 500,
   color = '#fff',
   animationDuration = 5000,
   className = '',

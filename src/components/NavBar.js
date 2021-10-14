@@ -24,6 +24,7 @@ export default function NavBar() {
   const logoutWithRedirect = () =>
     logout({
       returnTo: window.location.origin,
+      client_id: "hoxG2B0coMudr3JgwUuHr2ygFy9g1N1y",
     });
 
     const history = useHistory();
@@ -39,8 +40,8 @@ export default function NavBar() {
         <div>
             <div className="d-flex welcome">
                 <img src={Logo} alt='' className="st-logo" onClick={() => routeChange("/")} />
-                {(isAuthenticated && user.name != "Zach Jacobs") && (<div className="d-none d-sm-block" > Welcome, {user.name}! </div>)}
-                {(isAuthenticated && user.name == "Zach Jacobs") && (<div className="d-none d-sm-block" > Get lost, {user.name}! </div>)}
+                {(isAuthenticated && user.name) && (<div className="d-none d-sm-block" > Welcome, {user.name}! </div>)}
+                {(isAuthenticated && !user.name) && (<div className="d-none d-sm-block" > Welcome! </div>)}
             </div>
         </div>
         <div>

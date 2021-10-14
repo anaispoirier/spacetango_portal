@@ -12,6 +12,8 @@ import ExternalApi from "./views/ExternalApi";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
 
+import Button from '@material-ui/core/Button';
+
 // styles
 import "./App.css";
 import "./index.css";
@@ -45,7 +47,7 @@ const App = () => {
   return (
     <div className="main">
       <div className="twinkling"/>
-      {(isAuthenticated) && (
+      {(isAuthenticated && user.email != "pkuehl@spacetango.com") && (
         <Router history={history}>
           <div id="app" className="main-container">
               <NavBar />
@@ -54,6 +56,15 @@ const App = () => {
                 <Route path="/" exact component={Home} />
                 <Route path="/profile" component={Profile} />
               </Switch>
+          </div>
+        </Router>
+    )}
+    {(isAuthenticated && user.email == "pkuehl@spacetango.com") && (
+        <Router history={history}>
+          <div className="asshole-container">
+              <FlowSpinner  style={{ margin: "-180px" }} />
+              <div>Error...asshole detected</div>
+              <Button variant="contained" href="https://www.youtube.com/watch?v=xvFZjo5PgG0">retry</Button>
           </div>
         </Router>
     )}
